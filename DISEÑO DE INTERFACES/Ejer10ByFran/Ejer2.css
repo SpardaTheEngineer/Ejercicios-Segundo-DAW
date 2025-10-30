@@ -1,0 +1,52 @@
+
+#Titulo {
+
+    background-color: rgb(197, 197, 197);
+    color: blue;
+    text-align: center;
+
+}
+
+span {
+
+    text-decoration: underline;
+
+}
+
+.Caja {
+
+    background-color: lightblue;
+    border: solid 10px pink;
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    width: 150px;
+    position: absolute;
+    display: inline-block;
+
+
+}
+
+#Caja1 {
+
+    
+
+}
+
+#Caja2 {
+
+   top: 240px;
+   left: 260px;
+}
+
+#Caja3 {
+
+    top: 240px;
+
+}
+
+#Caja4 {
+
+    top: 400px;
+
+}
