@@ -21,8 +21,8 @@ span {
     padding: 30px;
     padding-top: 15px;
     width: 150px;
-    position: absolute;
-    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
 
 
 }
@@ -35,18 +35,18 @@ span {
 
 #Caja2 {
 
-   top: 240px;
+   position: absolute;
+   top: 243px;
    left: 260px;
+
 }
 
 #Caja3 {
 
-    top: 240px;
 
 }
 
 #Caja4 {
 
-    top: 400px;
 
 }
