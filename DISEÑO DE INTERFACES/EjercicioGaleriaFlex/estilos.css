@@ -1,0 +1,62 @@
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightblue;
+    
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
+#contenedor {
+
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;  /*Elementos centrados */
+    gap:30px; /* Espacio entre elementos */
+
+}
+
+.ficha {
+
+    display: flexbox;
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 380px;
+    padding: 2px;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}   
+
+button {
+    
+    background-color: rgb(105, 173, 250);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+
+}
+
+button:hover {
+
+    background-color: rgb(34, 119, 255);
+
+}
+
+img {
+
+    border-radius: 10px;
+    width: 100%;
+
+}
