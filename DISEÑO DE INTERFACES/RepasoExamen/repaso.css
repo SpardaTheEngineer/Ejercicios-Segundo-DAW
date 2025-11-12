@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 h2 {
@@ -49,4 +50,57 @@ h2 {
     background-color: rgb(248, 130, 150);
     border: double 10px rgb(2, 0, 148);
    
+=======
+
+
+h2 {
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.caja {
+
+    height: 70px;
+    margin: 20px;
+
+}
+
+.caja>h2:hover {
+
+    background-color: yellow;
+
+}
+
+#caja1 {
+
+    width: 50%;
+    background-color: rgb(151, 224, 247);
+    border: dashed 10px green ;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+
+}
+
+#caja2 {
+
+    width: 25%;
+    margin-left: 37%;
+    background-color: rgb(132, 173, 69);
+    border:solid 10px orange ;
+    border-radius: 2em;
+    color: white;
+    text-decoration: underline;
+
+}
+
+#caja3 {
+
+    width: 40%;
+    margin-left: 50%;
+    background-color: rgb(248, 130, 150);
+    border: double 10px rgb(2, 0, 148);
+   
+>>>>>>> eb21ac10484361d007d5fe8b27d05ae03eb11bee
 }

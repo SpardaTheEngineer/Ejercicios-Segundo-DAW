@@ -1,0 +1,50 @@
+
+#Titulo {
+
+    background-color: rgb(197, 197, 197);
+    color: blue;
+
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
+span {
+
+    text-decoration: underline;
+
+}
+
+.Caja {
+
+    background-color: lightblue;
+    border: solid 10px pink;
+    padding: 30px;
+    padding-top: 15px;
+    width: 150px;
+    position: relative;
+
+
+}
+
+#Caja1 {
+
+    
+
+}
+
+#Caja2 {
+
+    top: -60px;
+    left: 40px;
+
+}
+#Caja3 {
+
+    top: -120px;
+    left: 90px;
+
+}
