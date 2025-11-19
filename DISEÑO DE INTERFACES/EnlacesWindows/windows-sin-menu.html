@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP</title>
+    <link rel="stylesheet" type="text/css" href="windows-sin-menu.css">
+    
+</head>
+<body>
+    <a href="windows-menu.html">
+    <div class="desktop-icons" >
+        <div class="icon">
+            <svg width="48" height="48" viewBox="0 0 48 48">
+                <rect x="6" y="4" width="36" height="32" fill="#4a90e2" stroke="#2e5c8a" stroke-width="2"/>
+                <rect x="6" y="4" width="36" height="6" fill="#7ab8ff"/>
+                <rect x="12" y="20" width="6" height="10" fill="#ffd700"/>
+                <rect x="22" y="16" width="6" height="14" fill="#ffd700"/>
+                <rect x="32" y="12" width="6" height="18" fill="#ffd700"/>
+                <rect x="2" y="36" width="44" height="8" fill="#606060" stroke="#000" stroke-width="1"/>
+            </svg>
+            <span>My Computer</span>
+        </div>
+    </div>
+    </a>
+  
+            <div class="tab-content" id="content-7">
+                <h2>Tab 7 Area</h2>
+                <p>Last tab content goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-button">
+            <span style="font-style: italic;">start</span>
+        </div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        document.getElementById('close').onclick = function() {
+            window.location.href = 'windwos-menu.html';
+        };
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabNum = tab.dataset.tab;
+                
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(`content-${tabNum}`).classList.add('active');
+            });
+        });
+
+        // Update clock
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const ampm = now.getHours() >= 12 ? 'PM' : 'AM';
+            document.getElementById('time').textContent = `${hours}:${minutes} ${ampm}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
