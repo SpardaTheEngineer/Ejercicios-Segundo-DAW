@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,20 +16,21 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card p-4">
                     <div class="card-body">
-                        <h2 class="card-title text-center mb-4">Iniciar Sesión</h2>
-                        <form action="/login" method="post">
+                        <h2 class="card-title text-center mb-4">Registrar</h2>
+                        <div id="mensaje"></div>
+                        <form id="formularioBonico" action="login.html" method="post">
                             <div class="mb-3">
-                                <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="usuario" class="form-label">Usuario</label>
+                                <input type="usuario" class="form-control" id="usuario" name="usuario" required>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
+                                <label for="contrasena" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena" required>
                             </div>
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" value="" id="remember">
@@ -41,12 +43,51 @@
                             </div>
                         </form>
                         <div class="text-center mt-3">
-                            <a href="#">¿Olvidaste tu contraseña?</a>
+                            <a href="login.html">¿Nos vamos al Login?</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<script>
+
+  const formulario = document.getElementById("formularioBonico");
+  const mensaje = document.getElementById("mensaje");
+
+  formulario.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    const usuario = document.getElementById("usuario").value.trim();
+    const contrasena = document.getElementById("contrasena").value.trim();
+
+    if (!usuario || !contrasena) {
+
+      mensaje.innerHTML = `<div class="alert alert-danger">Rellena los dos campos.</div>`;
+      return;
+
+    }
+
+    let lista = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    if (lista.some(u => u.usuario === usuario)) {
+
+      mensaje.innerHTML = `<div class="alert alert-danger">Ese usuario ya existe.</div>`;
+      return;
+
+    }
+
+    lista.push({ usuario, contrasena });
+    localStorage.setItem("usuarios", JSON.stringify(lista));
+
+    mensaje.innerHTML = `<div class="alert alert-success">Usuario registrado. Ya puedes hacer login.</div>`;
+    form.reset();
+
+  });
+
+</script>
+
 </body>
 </html>
