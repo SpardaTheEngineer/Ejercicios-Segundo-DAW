@@ -31,7 +31,23 @@ input {
 button {
 
     background-color: rgb(65, 220, 65);
+    border: 1px solid grey;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
     width: 100px;
     height: 40px;
+
+}
+
+#correcto {
+
+    color: green;
+
+}   
+
+#error {
+
+    color: red;
 
 }
