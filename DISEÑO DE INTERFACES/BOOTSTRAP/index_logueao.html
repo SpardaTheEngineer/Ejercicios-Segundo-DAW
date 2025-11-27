@@ -38,6 +38,9 @@
 </head>
 <body>
 
+<div class="container ">
+
+
 <div class="titulo text-white text-center p-2 bg-info ">
     
     <h1>Micro-Shop</h1>
@@ -51,36 +54,100 @@
 
 </div>
 
-<div class="menu-movil d-sm-none text-center my-3">
+<!--Menu lateral pequeño al encoger la pantalla para movilesa-->
+<div class="menuChiquitico d-sm-none  ">
 
-    <div class="menu">
+    <div class="btn-group py-1">
 
-        <a href="index_logueao.html" class="btn btn-warning btn-sm">Inicio</a>
+        <a href="index.html" class="btn btn-warning btn-sl px-2 py-1 "> <i class="bi bi-house"></i></a>
 
-        <div class="menu">
+        <div class="elegirProductico btn-group">
+            <button type="button" class="btn btn-info w-100 btn-sl px-3 dropdown-toggle shadow-none" data-bs-toggle="dropdown">
+                Productos
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                <li><a class="dropdown-item" href="#">Memoria Ram</a></li>
+                <li><a class="dropdown-item" href="#">Placa base</a></li>
+            </ul>
+        </div>
 
-        <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown">
-            Productos
-        </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ordenadores</a></li>
-                    <li><a class="dropdown-item" href="#">Componentes</a></li>
-                    <li><a class="dropdown-item" href="#">Periféricos</a></li>
-                </ul>
-            </div>
+        <a href="presupuesto.html" class="btn btn-warning btn-sl">Presupuesto</a>
 
-            <a href="presupuesto.html" class="btn btn-warning btn-sm">Presupuesto</a>
+        <a href="galeria.html" class="btn btn-info btn-sl">Galeria</a>
 
-            <a href="galeria.html" class="btn btn-warning btn-sm position-relative">
-                Pedidos
-                <span class="badge bg-primary position-absolute top-0 start-100 translate-middle">3</span>
-            </a>
-    
+        <a href="#" class="btn btn-warning btn-sl"> Pedidos
+        <span class="badge bg-primary">3</span>
+        </a>
+
+    </div>
+</div>
+
+<!--Menu gerande al estirar la pantalla-->
+<div class="row mt-3 ">
+
+
+<div class="menuGrande d-none d-sm-block col-sm-3 col-lg-3 ">
+
+    <div class="btn-group-vertical text-center w-100 ">
+
+        <a href="index.html" class="btn btn-warning">Inicio</a>
+
+        <div class="btn-group ">
+
+            <button type="button" class="btn w-100 btn-info dropdown-toggle " data-bs-toggle="dropdown">
+                Productos
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Procesadores</a></li>
+                <li><a class="dropdown-item" href="">Memoria RAM</a></li>
+                <li><a class="dropdown-item" href="">Placa base</a></li>
+            </ul>
+
+        </div>
+
+        <a href="presupuesto.html" class="btn btn-warning ">Presupuesto</a>
+
+        <a href="galeria.html" class="btn btn-info">Galeria</a>
+
+        <a href="" class="btn btn-warning ">
+            <span>Pedidos</span>
+            <span class="badge bg-primary rounded-circle">3</span>
+        </a>
+
     </div>
 
 </div>
 
 
+ <div class="bienvendio col-sm-8 col-md-8 col-lg-8 ps-5  text-secondary">
+
+            <div class="texto " >
+                <p class="mb-1 display-5"><small><small><small>¡ Bienvenidos !</p>
+                <p class="mb-2 display-5"><small><small><small>
+                    En <span class="text-info display-6">Micro-Shop</span> 
+                    encontrarás productos con calidad, buen precio y un servicio al cliente inmejorable!.
+                </p>
+                <p class="mb-5 display-6"><small><small><small>
+                    ¡Gracias por su visita!
+                </p>
+            </div>
+</div>
+
+</div>
+
+<div class="bg-info">
+    <div class=" row mt-3 p-2">
+        <h6 class="text-center col-6 col-sm-4 col-md-3">Quiénes Somos</h6>
+        <h6 class="text-center col-6 col-sm-4 col-md-3">Trabaja con nosotros</h6>
+        <h6 class="text-center col-6 col-sm-4 col-md-3">Tarifas de envío</h6>
+        <h6 class="text-center col-6 col-sm-4 col-md-3">Localizar un pedido</h6>
+        <h6 class="text-center col-6 col-sm-4 col-md-3">Devolver un producto</h6>
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>
