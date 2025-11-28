@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Empresa;
+use App\Models\InformacionFiscal;
 use App\Models\Oferta;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -17,11 +18,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        InformacionFiscal::factory(10)->create();
+
+        $ofertas = Oferta::factory(100)->create();
+        $users = User::factory(10)->create();
+
+        foreach($ofertas as $oferta){
+            $candidatos = $users->random(5);
+            $oferta->candidatos()->attach($candidatos);
+        }
+
         Oferta::factory(100)->create();
-        Empresa::factory(100)->create();
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+
     }
 }

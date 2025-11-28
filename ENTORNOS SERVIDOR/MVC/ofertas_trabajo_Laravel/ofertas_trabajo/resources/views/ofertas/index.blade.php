@@ -18,7 +18,7 @@
         @foreach($ofertas as $oferta)
         <tr>
             <td>{{ $oferta->titulo }}</td>
-            <td>{{ $oferta->empresa }}</td>
+            <td>{{ $oferta->empresa->nombre }}</td>
             <td>{{ $oferta->descripcion }}</td>
             <td><a href="/ofertas/{{ $oferta->id }}">Ver detalles</a></td>
             <td>

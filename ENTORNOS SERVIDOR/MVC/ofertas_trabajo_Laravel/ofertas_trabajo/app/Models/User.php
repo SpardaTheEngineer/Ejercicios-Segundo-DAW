@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function ofertas(){
+        return $this->belongsToMany(Oferta::class, 'candidaturas')->withTimestamps();
+    }
+
 }

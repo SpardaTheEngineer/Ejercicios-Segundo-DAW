@@ -9,4 +9,12 @@ class Empresa extends Model
 {
     /** @use HasFactory<\Database\Factories\EmpresaFactory> */
     use HasFactory;
+
+    public function ofertas(){
+        return $this->hasMany(Oferta::class);
+    }
+
+    public function informacionFiscal(){
+        return $this->hasOne(InformacionFiscal::class);
+    }
 }

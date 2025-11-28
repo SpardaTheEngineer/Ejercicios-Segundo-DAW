@@ -12,4 +12,12 @@ class Oferta extends Model
 
     protected $fillable = ['titulo', 'empresa', 'descripcion'];
 
+    public function empresa(){
+        return $this->belongsTo(Empresa::class);
+    }
+
+    public function candidatos(){
+        return $this->belongsToMany(User::class, 'candidaturas')->withTimestamps();
+    }
+
 }
