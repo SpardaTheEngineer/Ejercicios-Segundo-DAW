@@ -1,0 +1,76 @@
+body {
+
+    background-color: pink;
+
+}
+
+#cabecera {
+
+    background-color: rgb(246, 89, 227);
+    margin: 0;
+    padding: 10px;
+
+}
+
+#cabecera a {
+
+    margin: 10px;
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+#cabecera h1 {
+
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#cuerpo {
+
+    text-align: center;
+
+}
+
+.imagen-oculta-cartelico {
+
+    background-color: rgb(255, 154, 218);
+    text-align: center;
+    position: relative;
+    float: left;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black ;
+    border-radius: 5px;
+    width:226px;
+    height:348px;
+
+}
+
+.texto-cartelico {
+
+    padding-top: 160px;
+    text-shadow: 20px black;
+
+}
+
+#cartel1:hover {
+
+    color: white;
+    position: relative;
+    background-image: url(/imagenes/atalaya.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+#cartel2:hover {
+
+    color: white;
+    position: relative;
+    background-image: url(/imagenes/riobueno_418x394.jpg);
+    background-repeat: no-repeat;
+    
+}
