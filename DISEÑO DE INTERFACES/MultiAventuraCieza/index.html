@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Aventura Cieza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
     
-  <div id="cabecera"> 
+<div id="cabecera" class="flex items-center gap-4">
+  
+  <!-- Contenedor menu depslegable -->
+  <div class="relative inline-block">
 
-    <nav-bar>
-        <a href="index.html">Inicio</a>
-        <a href="floracion.html">Floración</a>
-        <a href="contacto.html">Contacto</a>
-    </nav-bar>
+    <button id="menu-btn"
+      class="inline-flex items-center justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white hover:bg-white/20">
+      <!-- Saco los iconos del heroicons -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
 
-    <h1>Multi Aventura Cieza</h1>
+    </button>
 
+    <!-- Menu desplegable -->
+    <div id="menu-desplegable"
+         class="absolute left-0 mt-2 w-40 bg-pink-200 text-black rounded-md shadow-lg py-1 hidden z-50">
+      <a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Inicio</a>
+      <a href="floracion.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Floración</a>
+      <a href="contacto.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Contacto</a>
+    </div>
   </div>
 
- <div id="cuerpo">
+  <!-- Titulo -->
+<div id="textoMultiAventura" class="text-center">
+  <h1 class="text-3xl">Multi Aventura Cieza</h1>
+</div> 
 
+</div>
+
+<!--CUERPO DEL INDEXXX-->
+ <div id="cuerpo" class="flex flex-wrap justify-center mt-5">
+
+    <div  class="text-2xl mb-6 text-center w-full">
     <h1>¿Que tenemos en Cieza que nos hace tan especiales?</h1>
-
+    </div>
         <div class="imagen-oculta-cartelico" id="cartel1">
 
             <div class="titulo-cartelicos">
@@ -69,10 +92,8 @@
 
         </div>
 
-
-
-
   </div>      
+
 
 </body>
 </html>
