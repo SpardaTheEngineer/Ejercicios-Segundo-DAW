@@ -1,0 +1,67 @@
+{
+  "usuarios": [
+    {
+      "id": "3f24",
+      "nombre": "Alberto",
+      "apellidos": "Vicente Villa",
+      "dni": "49195678N",
+      "email": "albertico98@gmail.com"
+    },
+    {
+      "id": "95ef",
+      "nombre": "JuanP",
+      "apellidos": "Lopez Luna",
+      "dni": "6969696C",
+      "email": "juanp@hotmail.com"
+    },
+    {
+      "id": "de65",
+      "nombre": "mario",
+      "apellidos": "mario",
+      "dni": "1212222P",
+      "email": "mario@mario.com"
+    },
+    {
+      "id": "9a94",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francisc@gmail.com"
+    },
+    {
+      "id": "8ef8",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francisc@gmail.com"
+    },
+    {
+      "id": "db15",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francss@gmail.com"
+    },
+    {
+      "id": "6bec",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francss@gmail.com"
+    },
+    {
+      "id": "1290",
+      "nombre": "Manolito",
+      "apellidos": "Lopez",
+      "dni": "69696969C",
+      "email": "man@man.com"
+    },
+    {
+      "id": "335b",
+      "nombre": "Francsico",
+      "apellidos": "Cas",
+      "dni": "69696969C",
+      "email": "francissssf@gmail.com"
+    }
+  ]
+}

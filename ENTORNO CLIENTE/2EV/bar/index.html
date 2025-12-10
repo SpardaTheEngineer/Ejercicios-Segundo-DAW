@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar</title>
+</head>
+<style>
+
+    .barecico {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain; 
+        z-index: -1;
+
+    }
+
+    .mesa {
+
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+
+    }
+
+    .comandicas {
+
+        position: absolute;
+        left: 3px;
+        top: 50px;
+        right: 30px;
+        width: 40px;
+
+    }
+
+</style>
+<body>
+
+    <script src="main.js"></script>
+    
+    <img class="barecico" src="asserts/bar.png" alt="barecico">
+
+    <div id="botonAñadirMesa"></div>
+
+    <div id="comandas"></div>
+
+    <div id="ventanaModal"></div>
+
+    <div id="ponerMesa"></div>
+
+</body>
+</html>

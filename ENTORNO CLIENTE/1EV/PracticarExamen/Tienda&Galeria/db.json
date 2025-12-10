@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "id": "10",
+      "nombre": "Caja PC NZXT H510",
+      "precio": 89.99,
+      "categoria": "Componentes",
+      "stock": 11
+    },
+    {
+      "id": "11",
+      "nombre": "Impresora HP LaserJet Pro M404dn",
+      "precio": 219,
+      "categoria": "Impresoras",
+      "stock": 6
+    },
+    {
+      "id": "12",
+      "nombre": "Router ASUS RT-AX55 WiFi 6",
+      "precio": 99.99,
+      "categoria": "Red",
+      "stock": 20
+    },
+    {
+      "id": "13",
+      "nombre": "Auriculares HyperX Cloud II",
+      "precio": 89.99,
+      "categoria": "Audio",
+      "stock": 15
+    },
+    {
+      "id": "15",
+      "nombre": "Cámara web Logitech C920 HD Pro",
+      "precio": 69.99,
+      "categoria": "Periféricos",
+      "stock": 22
+    },
+    {
+      "id": "16",
+      "nombre": "Switch de red TP-Link 8 puertos Gigabit",
+      "precio": 26.99,
+      "categoria": "Red",
+      "stock": 35
+    },
+    {
+      "id": "17",
+      "nombre": "USB Sandisk Ultra 64GB",
+      "precio": 11.99,
+      "categoria": "Almacenamiento",
+      "stock": 50
+    },
+    {
+      "id": "18",
+      "nombre": "Sistema operativo Windows 11 Pro",
+      "precio": 149,
+      "categoria": "Software",
+      "stock": 100
+    }
+  ]
+}

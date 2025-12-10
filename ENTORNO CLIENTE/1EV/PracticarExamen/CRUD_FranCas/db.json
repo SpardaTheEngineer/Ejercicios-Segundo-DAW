@@ -1,0 +1,81 @@
+{
+  "personas": [
+    {
+      "id": "1",
+      "nombre": "Manolito",
+      "apellidos": "López",
+      "dni": "12345678A",
+      "email": "joputa@cabron.com"
+    },
+    {
+      "id": "2",
+      "nombre": "Alberto",
+      "apellidos": "Vicente",
+      "dni": "87654321B",
+      "email": "albertito98@exayoquese.com"
+    },
+    {
+      "id": "2638",
+      "nombre": "Pepe",
+      "apellidos": "Lopez",
+      "dni": "69696969C",
+      "email": "pp@gmail.com"
+    },
+    {
+      "id": "5a8c",
+      "nombre": "Antonio",
+      "apellidos": "Perez",
+      "dni": "90909800F",
+      "email": "Anton@elloco.com"
+    },
+    {
+      "id": "32f2",
+      "nombre": "Pepe",
+      "apellidos": "Perez",
+      "dni": "69696969C",
+      "email": "pepe@pepe.com"
+    },
+    {
+      "id": "3329",
+      "nombre": "Minerva",
+      "apellidos": "Lopez",
+      "dni": "48658215N",
+      "email": "min@min.com"
+    },
+    {
+      "id": "3ee6",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francisc@gmail.com"
+    },
+    {
+      "id": "07af",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francisc@gmail.com"
+    },
+    {
+      "id": "fe38",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "francisc@gmail.com"
+    },
+    {
+      "id": "9cf6",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "franciscof@gmail.com"
+    },
+    {
+      "id": "60b8",
+      "nombre": "Francsico",
+      "apellidos": "Castaño Ruiz",
+      "dni": "69696969C",
+      "email": "franciscocastano.pdf@gmail.com"
+    }
+  ]
+}
