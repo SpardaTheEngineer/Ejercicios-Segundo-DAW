@@ -1,99 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Aventura Cieza</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiAventura</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="main.js"></script>
 </head>
 <body>
-    
-<div id="cabecera" class="flex items-center gap-4">
-  
-  <!-- Contenedor menu depslegable -->
-  <div class="relative inline-block">
-
-    <button id="menu-btn"
-      class="inline-flex items-center justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white hover:bg-white/20">
-      <!-- Saco los iconos del heroicons -->
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
-
-    </button>
-
-    <!-- Menu desplegable -->
-    <div id="menu-desplegable"
-         class="absolute left-0 mt-2 w-40 bg-pink-200 text-black rounded-md shadow-lg py-1 hidden z-50">
-      <a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Inicio</a>
-      <a href="floracion.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Floración</a>
-      <a href="contacto.html" class="block px-4 py-2 text-sm hover:bg-gray-100">Contacto</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="#">MultiAventura<span>Cieza</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     </div>
-  </div>
+  </header>
 
-  <!-- Titulo -->
-<div id="textoMultiAventura" class="text-center">
-  <h1 class="text-3xl">Multi Aventura Cieza</h1>
-</div> 
+  <main>
 
-</div>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-breadcrumb">Inicio / Aventuras</p>
+        <h1>Aventuras</h1>
+        <p class="hero-subtitle">
+          Elige tu próxima experiencia: barrancos, vías ferratas, senderismo y mucho más.
+        </p>
+      </div>
+    </section>
 
-<!--CUERPO DEL INDEXXX-->
- <div id="cuerpo" class="flex flex-wrap justify-center mt-5">
+    <!-- Listado de aventuras -->
+    <section class="aventuras">
+      <div class="container">
+        <div class="aventuras-header">
+          <h2>Todas las aventuras</h2>
+          <p>Explora nuestro catálogo de actividades al aire libre.</p>
+        </div>
 
-    <div  class="text-2xl mb-6 text-center w-full">
-    <h1>¿Que tenemos en Cieza que nos hace tan especiales?</h1>
+        <div class="aventuras-grid">
+          <!-- Card 1 -->
+          <article class="aventura-card">
+            <div class="aventura-image" style="background-image: url('https://images.pexels.com/photos/168778/pexels-photo-168778.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+            <div class="aventura-body">
+              <h3>Barranco Acuático del Río Verde</h3>
+              <p class="aventura-location">Sierra · Nivel medio</p>
+              <p class="aventura-description">
+                Descenso de barranco con rápeles, toboganes y saltos opcionales en un entorno espectacular.
+              </p>
+              <div class="aventura-meta">
+                <span>Duración: 4-5 h</span>
+                <span>Edad mínima: 12 años</span>
+              </div>
+              <div class="aventura-footer">
+                <span class="aventura-tag">Barranquismo</span>
+                <a href="#" class="btn-secondary">Ver más</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="aventura-card">
+            <div class="aventura-image" style="background-image: url('https://images.pexels.com/photos/697629/pexels-photo-697629.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+            <div class="aventura-body">
+              <h3>Vía Ferrata del Cañón</h3>
+              <p class="aventura-location">Montaña · Nivel iniciación</p>
+              <p class="aventura-description">
+                Ideal para empezar en el mundo de las vías ferratas, con puentes tibetanos y vistas increíbles.
+              </p>
+              <div class="aventura-meta">
+                <span>Duración: 3 h</span>
+                <span>Grupo: 2–8 personas</span>
+              </div>
+              <div class="aventura-footer">
+                <span class="aventura-tag">Vía Ferrata</span>
+                <a href="#" class="btn-secondary">Ver más</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="aventura-card">
+            <div class="aventura-image" style="background-image: url('https://images.pexels.com/photos/533943/pexels-photo-533943.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+            <div class="aventura-body">
+              <h3>Ruta de Senderismo al Mirador</h3>
+              <p class="aventura-location">Parque natural · Nivel fácil</p>
+              <p class="aventura-description">
+                Sendero suave y accesible para disfrutar en familia con vistas panorámicas espectaculares.
+              </p>
+              <div class="aventura-meta">
+                <span>Duración: 2 h</span>
+                <span>Distancia: 6 km</span>
+              </div>
+              <div class="aventura-footer">
+                <span class="aventura-tag">Senderismo</span>
+                <a href="#" class="btn-secondary">Ver más</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card extra de ejemplo -->
+          <article class="aventura-card">
+            <div class="aventura-image" style="background-image: url('https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+            <div class="aventura-body">
+              <h3>Multiaventura en el Cañón</h3>
+              <p class="aventura-location">Cañón · Nivel medio</p>
+              <p class="aventura-description">
+                Combina tirolina, rapel y pequeñas vías equipadas en una sola jornada llena de adrenalina.
+              </p>
+              <div class="aventura-meta">
+                <span>Duración: 5 h</span>
+                <span>Grupo: 4–10 personas</span>
+              </div>
+              <div class="aventura-footer">
+                <span class="aventura-tag">Multiaventura</span>
+                <a href="#" class="btn-secondary">Ver más</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <h1 class="footer-logo">
+        <span>MultiAventura Cieza</span>
     </div>
-        <div class="imagen-oculta-cartelico" id="cartel1">
-
-            <div class="titulo-cartelicos">
-                <h3>Atalaya</h3>
-            </div>
-            <div class="texto-cartelico">
-
-                <div>
-                    <p>En cieza podrás apreciar paisajes como la Atalaya y el castillo que son historia de nuestro pueblo.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="imagen-oculta-cartelico" id="cartel2">
-
-            <div class="titulo-cartelicos">
-                <h3>Río Segura</h3>
-            </div>
-            <div class="texto-cartelico">
-
-                <div>
-                    <p>El cual pasa por Murcia a su vez y desemboca en el Mar Mediterráneo.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="imagen-oculta-cartelico" id="cartel3">
-
-            <div class="titulo-cartelicos">
-                <h3>Cueva de la Serreta</h3>
-            </div>
-            <div class="texto-cartelico">
-
-                <div>
-                    <p>En cieza podrias apreciar paisajes como el río segura, el cual pasa por Murcia a su vez y desemboca en el Mar Mediterráneo.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-  </div>      
-
+  </footer>
 
 </body>
 </html>
