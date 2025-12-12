@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fran Castaño</title>
+    <script
+    src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'>
+    </script>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+    <h3>Primera Lista</h3>
+    <ul>
+
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+
+    </ul>
+
+    <h3>Segunda Lista</h3>
+
+    <ul>
+
+        <li>Quinto</li>
+        <li>Sexto</li>
+        <li>Septimo</li>
+        <li>Octavo</li>
+
+    </ul>
+
+    <button>Ocultar 1ª lista</button>
+
+
+    <script>
+    $(document).ready(function(e){
+        $("button").click(function(){
+            $('ul:first').hide();
+        });
+       
+    });
+    </script>
+
+</body>
+</html>

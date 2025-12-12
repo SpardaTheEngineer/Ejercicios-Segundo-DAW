@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fran Castaño</title>
+    <script
+    src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'>
+    </script>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+    <h3>Peliculas</h3>
+    <ul>
+
+        <li class="infantil">Aladin</li>
+        <li class="otras">Focus</li>
+        <li class="otras">Durmiendo con su enemigo</li>
+        <li class="infantil">Toy Story</li>
+        <li class="otras">Chantaje</li>
+        <li class="infantil">Vaiana</li>
+        <li class="otras">El padre de la novia</li>
+        <li class="infantil">Pocahontas</li>
+
+    </ul>
+
+    <button id="Pi">Pelis Infantiles</button><button id="Rp">Resto de Pelis</button>
+
+
+
+    <script>
+    $(document).ready(function(e){
+        $("#Pi").click(function(){
+            $('.infantil').css({'background-color': 'blue', 'color': 'white'});
+        });
+        $("#Rp").click(function(){
+            $('.otras').css({'background-color': 'orange', 'color': 'blue'});
+        });
+       
+    });
+    </script>
+
+</body>
+</html>
