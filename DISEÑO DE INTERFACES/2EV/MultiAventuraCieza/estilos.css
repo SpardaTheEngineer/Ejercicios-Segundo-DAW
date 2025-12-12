@@ -12,19 +12,18 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Montserrat", system-ui, "Segoe UI", sans-serif;
   color: #222;
   background-color: #f4f4f6;
 }
 
-.container {
+.contenedor {
   width: 100%;
   max-width: 1200px;
   padding: 0 1.5rem;
-  margin: 0 auto;
 }
 
-.site-header {
+.cabecerica {
   position: sticky;
   top: 0;
   z-index: 20;
@@ -32,7 +31,7 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-.header-inner {
+.banner-cabecerica {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,8 +52,6 @@ body {
 .main-nav {
   display: flex;
   gap: 1.5rem;
-  align-items: center;
-  margin-right: 50px;
 }
 
 .main-nav a {
@@ -89,38 +86,39 @@ body {
 }
 
 
-.hero {
+.bannercico {
   position: relative;
-  background-image: url("https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  background-size: cover;
+  background-image: url("imagenes/floracion.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
-  padding: 4rem 0;
+  padding: 9rem 0;
 }
 
-.hero-overlay {
+.bannercico-fondo {
   position: absolute;
   inset: 0;
   background: linear-gradient(120deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
 }
 
-.hero-content {
+.bannercico-contenido {
   position: relative;
   z-index: 1;
 }
 
-.hero-breadcrumb {
+.bannercico-cuerpo {
   font-size: 0.85rem;
   opacity: 0.85;
   margin-bottom: 0.5rem;
 }
 
-.hero h1 {
+.bannercico h1 {
   font-size: clamp(2rem, 3vw, 3rem);
   margin: 0.3rem 0 0.8rem;
 }
 
-.hero-subtitle {
+.bannercico-subtitle {
   max-width: 480px;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -165,35 +163,38 @@ body {
 }
 
 
-.aventuras {
-  padding: 2.5rem 0 3rem;
+.cuerpoDeLaPagina {
+  padding: 2.5rem 5rem 3rem;
 }
 
-.aventuras-header {
+.cabecera-cuerpoDeLaPagina {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   margin-bottom: 1.5rem;
 }
 
-.aventuras-header h2 {
+.cabecera-cuerpoDeLaPagina h2 {
   margin: 0;
   font-size: 1.6rem;
 }
 
-.aventuras-header p {
+.cabecera-cuerpoDeLaPagina p {
   margin: 0;
   color: #666;
   font-size: 0.95rem;
 }
 
-.aventuras-grid {
+.actividadesGuapas {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  max-width: 1800px;
 }
 
-.aventura-card {
+.actividad {
   background-color: #ffffff;
   border-radius: 16px;
   overflow: hidden;
@@ -203,42 +204,42 @@ body {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.aventura-card:hover {
-  transform: translateY(-4px);
+.actividad:hover {
+  transform: translateY(-20px);
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
 }
 
-.aventura-image {
+.actividad-imagen {
   height: 180px;
   background-size: cover;
   background-position: center;
 }
 
-.aventura-body {
+.actividad-cuerpo {
   padding: 1.1rem 1.2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.aventura-body h3 {
+.actividad-cuerpo h3 {
   margin: 0;
   font-size: 1.1rem;
 }
 
-.aventura-location {
+.actividad-localizacion {
   margin: 0;
   font-size: 0.85rem;
   color: #777;
 }
 
-.aventura-description {
+.actividad-descripcion {
   margin: 0.35rem 0 0.3rem;
   font-size: 0.9rem;
   color: #555;
 }
 
-.aventura-meta {
+.actividad-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -246,19 +247,19 @@ body {
   color: #555;
 }
 
-.aventura-meta span::before {
+.actividad-meta span::before {
   content: "• ";
   color: #00a383;
 }
 
-.aventura-footer {
+.actividad-pie {
   margin-top: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.aventura-tag {
+.actividad-tag {
   font-size: 0.8rem;
   background-color: rgba(0, 163, 131, 0.1);
   color: #007f66;
@@ -293,25 +294,27 @@ body {
 }
 
 /*La parte de cuando scrolleo para abajo que cambie a negro, tambien usa js*/
-.site-header {
+.cabecerica {
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
   background-color: transparent; 
 }
 
-.site-header.scrolled {
+.cabecerica.scrolled {
   background-color: rgba(0, 0, 0, 1); 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
 }
 
-.site-header.scrolled .main-nav a {
+.cabecerica.scrolled .main-nav a {
   color: #fff;
 }
 
-.site-header.scrolled .logo a {
+.cabecerica.scrolled .logo a {
   color: #fff;
 }
 
-.site-header.scrolled .logo span {
+
+
+.cabecerica.scrolled .logo span {
   color: #00d4b4; 
 }
 
@@ -322,34 +325,49 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .aventuras-grid {
+  .actividades-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 720px) {
-  .header-inner {
-    height: 60px;
+
+  .cuerpoDeLaPagina {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .actividadesGuapas {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .filters-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .actividades {
+    padding-top: 2rem;
+  }
+
+  .actividades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actividad-imagen {
+    height: 190px;
   }
 
   .main-nav {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    left: 0;
-    flex-direction: column;
-    padding: 0.8rem 1.5rem 1rem;
-    background-color: #ffffff;
     display: none;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
   }
 
-  .main-nav.nav-open {
+  .nav-open {
     display: flex;
   }
 
   .menu-toggle {
     display: block;
+    background-color: white;
   }
 
   .filters-inner {
@@ -367,5 +385,6 @@ body {
   .aventura-image {
     height: 190px;
   }
+
 
 }

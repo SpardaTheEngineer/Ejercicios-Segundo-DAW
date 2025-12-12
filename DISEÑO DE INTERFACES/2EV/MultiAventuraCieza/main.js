@@ -7,10 +7,10 @@ window.addEventListener('load', () => {
       nav.classList.toggle('nav-open');
     });
     
-    const header = document.querySelector('.site-header');
+    const header = document.querySelector('.cabecerica');
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 69) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
