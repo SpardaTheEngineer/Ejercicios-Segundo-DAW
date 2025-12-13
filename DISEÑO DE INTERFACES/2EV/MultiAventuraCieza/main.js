@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     const header = document.querySelector('.cabecerica');
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 69) {
+      if (window.scrollY > 169) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');

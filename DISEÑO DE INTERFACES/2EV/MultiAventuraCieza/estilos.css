@@ -17,11 +17,7 @@ body {
   background-color: #f4f4f6;
 }
 
-.contenedor {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 1.5rem;
-}
+
 
 .cabecerica {
   position: sticky;
@@ -31,11 +27,18 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
+
 .banner-cabecerica {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
+}
+
+.primerTextoBanner {
+  font-family: 'FuenteBonica', cursive;
+  font-size: 1.6rem;
+  color: #ffffff;
 }
 
 .logo a {
@@ -51,7 +54,8 @@ body {
 
 .main-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 4rem;
+  margin-right: 3rem;
 }
 
 .main-nav a {
@@ -305,22 +309,140 @@ body {
 }
 
 .cabecerica.scrolled .main-nav a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .cabecerica.scrolled .logo a {
   color: #fff;
 }
 
-
-
 .cabecerica.scrolled .logo span {
   color: #00d4b4; 
 }
 
+.piececito {
+  text-align: center;
+}
+
+.telefono-correo {
+  text-decoration: underline;
+  color: black;
+}
+
+/*Caja de comentarios*/
+
+.comentarios {
+max-width: 520px;
+margin: 3rem auto;
+padding: 2rem 2.2rem;
+background: #ffffff;
+border-radius: 20px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.comentarios h2 {
+margin: 0;
+font-size: 1.6rem;
+text-align: center;
+}
+
+
+.comentarios-sub {
+text-align: center;
+color: #666;
+font-size: 0.95rem;
+margin-bottom: 1.8rem;
+}
+
+
+.form-comentarios {
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+}
+
+
+.campo {
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+}
+
+
+.campo label {
+font-size: 0.85rem;
+font-weight: 600;
+color: #444;
+}
+
+
+.campo input,
+.campo textarea {
+padding: 0.65rem 0.75rem;
+border-radius: 10px;
+border: 1px solid #d1d5db;
+font-size: 0.9rem;
+font-family: inherit;
+resize: none;
+}
+
+
+.campo input:focus,
+.campo textarea:focus {
+outline: none;
+border-color: #00a383;
+box-shadow: 0 0 0 2px rgba(0, 163, 131, 0.15);
+}
+
+
+.btn-enviar {
+margin-top: 0.8rem;
+padding: 0.7rem 1rem;
+border-radius: 999px;
+border: none;
+background: #00a383;
+color: white;
+font-size: 0.95rem;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+
+.btn-enviar:hover {
+background: #009072;
+transform: translateY(-1px);
+box-shadow: 0 8px 18px rgba(0, 163, 131, 0.35);
+}
+
+
 
 /* Las media querys para que sea responsive*/
+
+@media (min-width: 961px) {
+
+  .cabecerica .contenedor, .bannercico .contenedor {
+    max-width: none;  
+    margin: 0;        
+    width: 100%;
+  }
+
+  .cabecerica .contenedor, .bannercico .contenedor {
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+  }
+
+  .bannercico .contenedor {
+
+    margin-left: 3rem;
+
+  }
+
+}
+
 @media (max-width: 960px) {
+
   .filters-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -328,9 +450,58 @@ body {
   .actividades-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+   .cabecerica .contenedor, .bannercico .contenedor {
+    max-width: none;  
+    margin: 0;        
+    width: 100%;
+  }
+
+  .cabecerica .contenedor, .bannercico .contenedor {
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+  }
+
+  .bannercico .contenedor {
+    margin-left: 3rem;
+  }
+  
+
 }
 
 @media (max-width: 720px) {
+
+  nav.main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;           /* justo debajo del header */
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    z-index: 999;
+  }
+
+  .main-nav a {
+
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 0;
+
+  }
+
+  .cabecerica.scrolled .main-nav a {
+    color: rgb(0, 0, 0);
+  }
+
+  .bannercico .contenedor {
+    margin-left: 0.2rem;
+  }
 
   .cuerpoDeLaPagina {
     padding: 2.5rem 1rem 3rem;
@@ -357,17 +528,13 @@ body {
     height: 190px;
   }
 
-  .main-nav {
-    display: none;
-  }
-
-  .nav-open {
+  nav.main-nav.nav-open {
     display: flex;
   }
 
   .menu-toggle {
     display: block;
-    background-color: white;
+    background-color: #f4f4f6;
   }
 
   .filters-inner {
@@ -386,5 +553,12 @@ body {
     height: 190px;
   }
 
+  
+  @media (max-width: 600px) {
+  .comentarios {
+  margin: 2rem 1rem;
+  padding: 1.6rem 1.4rem;
+  }
+}
 
 }
