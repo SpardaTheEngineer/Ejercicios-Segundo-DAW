@@ -16,7 +16,11 @@ class OfertaController extends Controller
     public function index()
     {
         return view('ofertas.index', [
-            'ofertas' => Oferta::all()
+            'ofertas' => Oferta::with([
+                'empresa:id,nombre,user_id',
+                'empresa.user:id'
+
+            ])->get()
         ]);
 
     }
