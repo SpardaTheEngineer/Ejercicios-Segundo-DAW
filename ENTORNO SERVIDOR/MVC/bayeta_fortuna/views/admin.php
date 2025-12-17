@@ -1,10 +1,3 @@
-<?php
-    require_once 'Database.php';
-    require_once 'Auspicio.php';
-
-    new Database();
-    $auspicios = Auspicio::getAll();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +12,7 @@
             <li>
                 <strong><?= htmlspecialchars($auspicio->getAutor()) ?>:</strong>
                 <?= htmlspecialchars($auspicio->getDescripcion()) ?>
-                <form method="POST" action="eliminar_auspicio.php" style="display:inline;">
+                <form method="POST" action="index.php?action=eliminar" style="display:inline;">
                     <input type="hidden" name="id" value="<?= htmlspecialchars($auspicio->getId()) ?>">
                     <button type="submit">Eliminar</button>
                 </form>

@@ -1,0 +1,10 @@
+[
+  {
+    "type": "sqlite",
+    "path": "c:\\Users\\franc\\MiRepoGithub\\Ejercicios-Segundo-DAW\\ENTORNO SERVIDOR\\MVC\\bayeta_fortuna\\models\\database.sqlite"
+  },
+  {
+    "type": "sqlite",
+    "path": "c:\\Users\\franc\\MiRepoGithub\\Ejercicios-Segundo-DAW\\ENTORNO SERVIDOR\\MVC\\bayeta_fortuna\\database.sqlite"
+  }
+]

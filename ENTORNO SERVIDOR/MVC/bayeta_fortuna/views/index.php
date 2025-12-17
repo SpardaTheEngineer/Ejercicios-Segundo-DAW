@@ -1,6 +1,6 @@
 <?php
-    require_once 'Database.php';
-    require_once 'Auspicio.php';
+    require_once __DIR__ . '/../models/Database.php';
+    require_once __DIR__ . '/../models/Auspicio.php';
 
     new Database();
     $auspicio = Auspicio::getRandom();
@@ -57,7 +57,7 @@
                 <p>No hay auspicios disponibles</p>
             <?php endif; ?>
         </section>
-        <footer>Pulsa aquí para spoilearte todos los auspicios: <a href="admin.php">Admin</a></footer>
+        <footer>Pulsa aquí para spoilearte todos los auspicios: <a href="index.php?action=admin">Admin</a></footer>
     </main>
 </body>
 </html>
